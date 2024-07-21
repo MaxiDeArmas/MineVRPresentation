@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Technical Details</title>
+</head>
+
+<body>
+    <main>
+        <!-- Side navigation -->
+        <div class="sidenav">
+            <a href="home.html">Home</a>
+            <a href="ByM.html">Background and Motivation</a>
+            <a href="PO.html">Project Overview</a>
+            <a href="TD.html">Technical Details</a>
+            <a href="INT.html">Interactions</a>
+            <a href="SCRIPTS.html" class="active">Scripts</a>
+            <a href="Play.html">Play!</a>
+            <a href="TY.html">Thank You!</a>
+            <a href="QA.html">Q&A Session</a>
+        </div>
+
+        <!-- Page content -->
+        <div class="Page">
+
+            <h1>Depths Below: A Virtual Mine Experience</h1>
+
+            <section>
+                <div class="container">
+                    <div class="carousel">
+
+                        <input type="radio" name="slides" checked="checked" id="slide-1">
+                        <input type="radio" name="slides" id="slide-2">
+                        <input type="radio" name="slides" id="slide-3">
+
+                        <ul class="carousel__slides">
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="../images/VS.jpg" alt="Visual Studio Code Logo" class="carouselPic">
+                                    </div>
+                                    <figcaption>
+
+                                        <h4>Programming Language</h4>
+
+                                        <ul>
+                                            <li>A programming language is like a set of rules and
+                                                vocabulary that developers use to communicate with computers. It tells
+                                                the computer what to do and how to do it.
+                                            </li>
+
+                                            <li>Just like there are different languages like English,
+                                                Spanish, and Chinese, there are different programming languages.
+                                            </li>
+
+                                            <li>The language used with Unity is C#. Visual Studio Code used for development.</li>
+
+                                            <li>
+                                                Visual Studio Code (VS Code) is a lightweight, cross-platform
+                                                source code editor developed by Microsoft.
+                                            </li>
+                                        </ul>
+
+                                        <span class="credit">‌Photo: (2024). Smartstore.com.
+                                            https://www.smartstore.com/media/3126/content/3126.jpg?size=1024‌,<br>
+                                            VS Definition: Visual Studio Code. (2022, April 3). Wikipedia. https://bit.ly/3UIhRyD</span>
+                                    </figcaption>
+                                </figure>
+                            </li>
+
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="../images/Path Script.png" alt="Path Script" class="carouselPic">
+                                    </div>
+                                    <figcaption>
+
+                                        <h4>Path</h4>
+
+                                        <ul>
+                                            <li class="longText">The TeleportationArea class defines an area that serves
+                                                as a teleportation destination for users in a virtual environment.
+                                            </li>
+
+                                            <li class="longText">
+                                                <u>Class Definition</u>: 'TeleportationArea' - This class extends
+                                                BaseTeleportationInteractable, which means it inherits functionality
+                                                from that class and implements its own teleportation behavior.
+                                            </li>
+
+                                            <li class="longText">
+                                                <u>GenerateTeleportRequest Method</u>: This method is responsible for
+                                                generating a teleport request when a user initiates a teleportation
+                                                action.
+                                            </li>
+
+                                            <li class="longText">
+                                                TeleportationArea class facilitates teleportation in a virtual
+                                                environment by determining the destination position and rotation based
+                                                on where the user's interactor intersects with the environment.
+                                            </li>
+                                        </ul>
+
+                                        <span class="credit">‌Photo: Screenshot from Script,<br>
+                                            Explanation of Code: ChatGPT</span>
+
+                                    </figcaption>
+                                </figure>
+                            </li>
+
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="../images/Rock Script.png" alt="Rock Script" class="carouselPic">
+                                    </div>
+                                    <figcaption>
+                                        <h4>Rocks</h4>
+
+                                        <ul>
+                                            <li class="longText">This script, named RockInteraction, defines the
+                                                interaction between a pickaxe and a rock in a Unity scene.
+                                            </li>
+
+                                            <li class="longText">
+                                                <u>Interaction Logic</u>:
+
+                                                <ul>
+                                                    <li class="longText">Inside the OnTriggerEnter method, the script
+                                                        checks if the
+                                                        collider's tag is "Pickaxe" using other.CompareTag("Pickaxe")
+
+                                                    <li class="longText">If the tag matches, it means the pickaxe has
+                                                        entered the
+                                                        trigger zone.</li>
+
+                                                    <li class="longText">Upon collision with the pickaxe, the script
+                                                        destroys the
+                                                        rock GameObject using Destroy(rock).</li>
+
+                                                    <li class="longText">It also plays an audio clip attached to the
+                                                        audioSource
+                                                        component using audioSource.Play().</li>
+                                                </ul>
+                                            </li>
+
+                                            <span class="credit">‌Photo: Screenshot from Script,<br>
+                                                Explanation of Code: ChatGPT</span>
+                                        </ul>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                        <ul class="carousel__thumbnails">
+                            <li>
+                                <label for="slide-1">Introduction</label>
+                            </li>
+                            <li>
+                                <label for="slide-2">Path</label>
+                            </li>
+                            <li>
+                                <label for="slide-3">Rocks</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
