@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+* {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  color: #FFFFFF;
+  background-color: #bfa390;
+}
+
+/* ---------------------------- */
+
+/* Main style */
+main {
+  background-color: #bfa390;
+  border-color: #2a2625;
+}
+
+.Page {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+  /* position: fixed; Fixed Sidebar (stay in place on scroll) */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+p,
+ul,
+li {
+  text-align: left;
+  background-color: #794f3b;
+}
+
+h1, h4 {
+  background-color: #2a2625;
+  border-radius: 22px;
+  margin: 10px;
+}
+
+/* ---------------------------- */
+
+/* Img style */
+.HomePic {
+  border-radius: 22px;
+  background-color: #794f3b;
+  width: 99%;
+}
+
+/* ---------------------------- */
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #2a2625; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 40px;
+  color: #FFFFFF;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #909faa;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+}
+
+.active {
+  background-color: #794f3b;
+  color: #111;
+}
+
+/* ---------------------------- */
+
+/* Carousel Styling */
+
+.carouselPic {
+  width: 99%;
+  border-radius: 22px;
+  margin: 5px;
+}
+
+.carousel>input {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+.carousel>input:nth-of-type(6):checked~.carousel__slides .carousel__slide:first-of-type {
+  margin-left: -500%;
+}
+
+.carousel>input:nth-of-type(5):checked~.carousel__slides .carousel__slide:first-of-type {
+  margin-left: -400%;
+}
+
+.carousel>input:nth-of-type(4):checked~.carousel__slides .carousel__slide:first-of-type {
+  margin-left: -300%;
+}
+
+.carousel>input:nth-of-type(3):checked~.carousel__slides .carousel__slide:first-of-type {
+  margin-left: -200%;
+}
+
+.carousel>input:nth-of-type(2):checked~.carousel__slides .carousel__slide:first-of-type {
+  margin-left: -100%;
+}
+
+.carousel>input:nth-of-type(1):checked~.carousel__slides .carousel__slide:first-of-type {
+  margin-left: 0%;
+}
+
+.carousel>input:nth-of-type(1):checked~.carousel__thumbnails li:nth-of-type(1) {
+  box-shadow: 0px 0px 0px 5px #2a2625;
+  border-radius: 22px;
+}
+
+.carousel>input:nth-of-type(2):checked~.carousel__thumbnails li:nth-of-type(2) {
+  box-shadow: 0px 0px 0px 5px #2a2625;
+  border-radius: 22px;
+}
+
+.carousel>input:nth-of-type(3):checked~.carousel__thumbnails li:nth-of-type(3) {
+  box-shadow: 0px 0px 0px 5px #2a2625;
+  border-radius: 22px;
+}
+
+.carousel>input:nth-of-type(4):checked~.carousel__thumbnails li:nth-of-type(4) {
+  box-shadow: 0px 0px 0px 5px #2a2625;
+  border-radius: 22px;
+}
+
+.carousel>input:nth-of-type(5):checked~.carousel__thumbnails li:nth-of-type(5) {
+  box-shadow: 0px 0px 0px 5px #2a2625;
+  border-radius: 22px;
+}
+
+.carousel>input:nth-of-type(6):checked~.carousel__thumbnails li:nth-of-type(6) {
+  box-shadow: 0px 0px 0px 5px #2a2625;
+  border-radius: 22px;
+}
+
+.carousel__slides {
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  display: flex;
+  border-radius: 22px;
+}
+
+.carousel__slide {
+  position: relative;
+  display: block;
+  flex: 1 0 100%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 300ms ease-out;
+  box-sizing: border-box;
+  white-space: normal;
+}
+
+.carousel__slide figure {
+  display: flex;
+  margin: 0;
+}
+
+.carousel__slide div {
+  position: relative;
+  width: 100%;
+}
+
+.carousel__slide div:before {
+  display: block;
+  content: "";
+  width: 100%;
+}
+
+.carousel__slide img {
+  display: block;
+  flex: 1 1 auto;
+  object-fit: fill;
+  background-color: #FFFFFF;
+}
+
+.carousel__slide figcaption {
+  align-self: flex-end;
+  padding: 0 20px 0 20px;
+  flex: 0 0 auto;
+  width: 25%;
+  min-width: 150px;
+}
+
+.carousel__slide figcaption ul li {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.carousel__slide .longText {
+  font-size: 15px;
+}
+
+.carousel__slide .credit {
+  margin-top: 1rem;
+  color: #FFFFFF;
+  display: block;
+  font-size: 10px;
+}
+
+.carousel__slide.scrollable {
+  overflow-y: scroll;
+}
+
+.carousel__thumbnails {
+  list-style: none;
+  display: flex;
+  border-radius: 22px;
+}
+
+.carousel__slides+.carousel__thumbnails {
+  margin-top: 20px;
+}
+
+.carousel__thumbnails li {
+  flex: 1 1 auto;
+  /* max-width: calc((100% / 6) - 20px); */
+  margin: 0 10px;
+  transition: all 300ms ease-in-out;
+}
+
+.carousel__thumbnails label {
+  display: block;
+}
+
+.carousel__thumbnails label:hover,
+.carousel__thumbnails label:focus {
+  cursor: pointer;
+}
